@@ -1,3 +1,5 @@
+
+
 import React from 'react';
 import ProfileSection from '../components/sections/ProfileSection';
 import TechStackSection from '@/components/sections/TechStackSection';
@@ -8,7 +10,7 @@ const HomePage: React.FC = () => {
   return (
     <div>
       <ProfileSection />
-      <Separator/>
+    <Separator/>
       <TechStackSection/>
       <Separator/>
       <ProjectSection/>
