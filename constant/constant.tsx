@@ -1,12 +1,13 @@
+import project1 from '../public/project1.png'
 import photo from '../public/photo.jpg'
 
 
 const projects = [
   {
-    title: 'Project One',
+    title: 'TrueColors Photography',
     description: 'This is a description of project one. It showcases the use of React, Node.js, and MongoDB.',
     techStack: ['HTML', 'CSS', 'ReactJS', 'TailwindCss', 'Firebase'],
-    image: photo,
+    image: project1,
     githubLink: 'https://github.com/your-username/project-one',
     websiteLink: 'https://project-one-website.com',
   },
