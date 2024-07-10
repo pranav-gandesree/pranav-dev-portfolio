@@ -95,6 +95,9 @@ import { z } from 'zod';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
+import { useToast } from "@/components/ui/use-toast"
+
+
 
 // Define the schema using zod
 const schema = z.object({
@@ -106,6 +109,8 @@ const schema = z.object({
 type FormData = z.infer<typeof schema>;
 
 const ContactSection: React.FC = () => {
+  const { toast } = useToast()
+
   const {
     register,
     handleSubmit,
@@ -114,9 +119,40 @@ const ContactSection: React.FC = () => {
     resolver: zodResolver(schema),
   });
 
-  const onSubmit = (data: FormData) => {
-    console.log(data);
-    // Handle form submission
+  const onSubmit = async (data: FormData) => {
+    try {
+      const response = await fetch('https://formspree.io/f/movavapj', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        // Show success toast
+        toast({
+          title: "Message Sent Succesfully!!", 
+          style: { maxWidth: '300px' },      
+        })
+      } else {
+        // Show error toast
+        toast({
+           variant: "destructive",
+          title: "Error!",
+          style: { maxWidth: '300px' },      
+        })
+      }
+    } catch (error) {
+      console.error("An error occurred:", error);
+      // Show error toast
+      toast({
+         variant: "destructive",
+        title: "Error!",    
+        style: { maxWidth: '300px' },   
+      })
+    }
   };
 
   return (
@@ -169,3 +205,4 @@ const ContactSection: React.FC = () => {
 };
 
 export default ContactSection;
+

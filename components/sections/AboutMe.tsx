@@ -1,15 +1,18 @@
 import React from 'react';
+import Education from '../Education';
 
 const AboutMe: React.FC = () => {
   return (
     <>
-    <div className='leading-7 justify-center'>
-        <h1 className='text-4xl xl mb-6 ml-20'>About Me</h1>
-        <p className='ml-20 mr-20 mb-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime illo voluptates nisi dicta eaque unde esse repellat quisquam accusamus nemo animi delectus vel autem porro sapiente velit, id optio. Aliquam consequatur libero, et deserunt earum corrupti aut voluptatum fuga sequi architecto adipisci quas ipsa. Nesciunt fuga inventore eius ipsum maxim! Expedita sit officiis fugit tempora explicabo quos autem. Reiciendis.</p>
-        <p className='ml-20 mr-20 mb-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime illo voluptates nisi dicta eaque unde esse repellat quisquam accusamus nemo animi delectus vel autem porro sapiente velit, id optio. Aliquam consequatur libero, et deserunt earum corrupti aut voluptatum fuga sequi architecto adipisci quas ipsa. Nesciunt fuga inventore eius ipsum maxincidunt voluptas qui, officia odit reprehenderit, nulla mollitia corrupti dolores! A suscipit sit rem delectus voluptas! Incidunt optioneque molestias sapiente dignissimos distinctio omnis id ipsa mollitia repellat sit quo, assumenda perferendis quia accusamus ullam illum! Expedita sit officiis fugit tempora explicabo quos autem. Reiciendis.</p>
-        <p className='ml-20 mr-20 mb-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est maxime illo voluptates nisi icta eaque unde esse repellat quisquam accusamus nemo animi delectus vel autem porro sapillo facilis saepe oiandae voluptatem animi repellendus vitae rem commodi maiores incidunt voluptas qui, officia odit reprehenderit, nulla mollitia corrupti dolores! A suscipit sit rem delectus voluptas! Incidunt optioneque molestias sapiente dignissimos distinctio omnis id ipsa mollitia repellat sit quo, assumenda perferendis quia accusamus ullam illum! Expedita sit officiis fugit tempora explicabo quos autem. Reiciendis.</p>
-    </div>
-     </>
+      <div className='leading-7 px-4 sm:px-8 lg:px-20 xl:px-28'>
+        <h1 className='text-3xl sm:text-4xl font-bold text-gray-50 mb-4 sm:mb-6'>About Me</h1>
+        <p className='text-base sm:text-lg text-gray-300 mb-4 sm:mb-6'>
+        I'm Gandesree Pranav, a passionate graduate in B.Tech CSE/IoT with a strong affinity for computer science. With proficiency in languages like C, Python, and Java, and databases including MongoDB, MySQL, and Firebase, I delve deep into the world of technology. My expertise spans the MERN stack and Next.js, crafting robust web applications with seamless user experiences. Beyond coding, I indulge in my love for movies, series and music . You can explore my projects and contributions on GitHub, where I showcase my dedication to innovation and problem-solving in software development.
+        </p>
+        <Education/>
+      
+      </div>
+    </>
   );
 };
 

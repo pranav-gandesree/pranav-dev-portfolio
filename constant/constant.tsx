@@ -1,6 +1,6 @@
 import project1 from '../public/project1.png'
-import photo from '../public/photo.jpg'
-
+import mediumImage from '../public/medium_image.png'
+import quicksharebin from '../public/quicksharebin.png'
 
 const projects = [
   {
@@ -8,24 +8,24 @@ const projects = [
     description: 'This is a description of project one. It showcases the use of React, Node.js, and MongoDB.',
     techStack: ['HTML', 'CSS', 'ReactJS', 'TailwindCss', 'Firebase'],
     image: project1,
-    githubLink: 'https://github.com/your-username/project-one',
-    websiteLink: 'https://project-one-website.com',
+    githubLink: 'https://github.com/pranav-gandesree/truecolors',
+    websiteLink: 'https://truecolors-photography.com',
   },
   {
-    title: 'Project Two',
-    description: 'This is a description of project two. It showcases the use of TypeScript, Express.js, and PostgreSQL.',
+    title: 'InkSpire Hub',
+    description: 'Inkspire Hub is a modern content publishing platform inspired by Medium, offering a seamless, engaging experience for writers and readers.Built with React and Node.js, Inkspire Hub is the perfect place to create, discover, and connect through high-quality content.',
     techStack: ['JavaScript','React','Express.js', 'Node.js', 'MongoDB'],
-    image: photo,
-    githubLink: 'https://github.com/your-username/project-two',
-    websiteLink: 'https://project-two-website.com',
+    image: mediumImage,
+    githubLink: 'https://github.com/pranav-gandesree/InkSpire-Hub',
+    // websiteLink: 'https://project-two-website.com',
   },
   {
-    title: 'Project Three',
-    description: 'This is a description of project three. It showcases the use of TypeScript, Express.js, and PostgreSQL.',
+    title: 'QuickShareBin',
+    description: ' Share text snippets quickly with unique URLs. An efficient tool for sharing text content across devices and platforms.',
     techStack: ['JavaScript','React','Express.js', 'Node.js', 'MongoDB'],
-    image: photo,
-    githubLink: 'https://github.com/your-username/project-three',
-    websiteLink: 'https://project-three-website.com',
+    image: quicksharebin,
+    githubLink: 'https://github.com/pranav-gandesree/stagbinClone',
+    // websiteLink: 'https://project-three-website.com',
   },
 ];
 
