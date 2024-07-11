@@ -79,16 +79,31 @@ const ProfileSection: React.FC = () => {
         With a deep interest in full stack development, I constantly explore new technologies to stay ahead in this ever-evolving field. 
         Let's build something amazing together!
       </p>
-      <div className="flex flex-row md:flex-row  md:space-y-0 md:space-x-4">
+
+      {/* <div className="flex flex-row md:flex-row  md:space-y-0 md:space-x-4">
       <a href="/pranavResume.pdf" download>
           <Button className="bg-slate-700 hover:bg-slate-500 w-auto md:w-auto md:px-4 md:py-2 lg:w-auto lg:px-6 lg:py-3 mr-6">
             Download Resume
           </Button>
         </a>
+  
         <Button onClick={handleContactRedirect} className="bg-slate-700 hover:bg-slate-500 w-auto md:w-auto md:px-4 md:py-2 lg:w-auto lg:px-6 lg:py-3">
           Contact Me
         </Button>
-      </div>
+
+      </div> */}
+      <div className="flex flex-row md:flex-row md:space-y-0 md:space-x-2">
+  <a href="/pranavResume.pdf" download>
+    <Button className="bg-slate-700 hover:bg-slate-500 w-auto md:w-auto md:px-4 md:py-2 lg:w-auto lg:px-6 lg:py-3">
+      Download Resume
+    </Button>
+  </a>
+
+  <Button onClick={handleContactRedirect} className="bg-slate-700 hover:bg-slate-500 w-auto md:w-auto md:px-4 md:py-2 lg:w-auto lg:px-6 lg:py-3">
+    Contact Me
+  </Button>
+</div>
+
     </div>
   );
 };

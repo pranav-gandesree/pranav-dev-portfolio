@@ -8,9 +8,7 @@ const  ProjectsPage : React.FC = () => {
 
       <div className='ml-12 md:ml-14 lg:ml-20 xl:ml-28'>
   <h1 className='text-4xl sm:text-3xl font-bold mb-2 sm:mb-4 text-gray-50'>Projects</h1>
-  {/* <p className="text-lg sm:text-xl text-gray-300">
-    List of projects that I have been involved in or have created in the past.
-  </p> */}
+
 </div>
       <div className="flex flex-wrap justify-center space-x-4 p-8">
          {projects.map((project) => (
