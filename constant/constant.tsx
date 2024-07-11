@@ -3,9 +3,10 @@ import mediumImage from '../public/medium_image.png'
 import quicksharebin from '../public/quicksharebin.png'
 
 const projects = [
+  
   {
     title: 'TrueColors Photography',
-    description: 'This is a description of project one. It showcases the use of React, Node.js, and MongoDB.',
+    description: 'The Truecolor Photography landing page is a showcase of artistry and professionalism in visual storytelling. Designed to captivate visitors from the moment they arrive, it highlights the commitment to capturing life&apos;s most precious moments with clarity and vibrancy',
     techStack: ['HTML', 'CSS', 'ReactJS', 'TailwindCss', 'Firebase'],
     image: project1,
     githubLink: 'https://github.com/pranav-gandesree/truecolors',
