@@ -158,7 +158,7 @@ const ContactSection: React.FC = () => {
   return (
     <div className="flex justify-center mt-8 h-auto">
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 w-4/5 md:w-3/5 lg:w-2/5 border border-white p-6 pb-8 rounded-lg bg-customBlueGray shadow-md">
-        <h2 className="text-2xl text-gray-100 text-center mb-4">Let's get in touch. Leave me your message. 💬</h2>
+        <h2 className="text-2xl text-gray-100 text-center mb-4">Let&apos;s get in touch! Leave me your message. 💬</h2>
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-gray-100">
             Name

@@ -77,7 +77,7 @@ const ProfileSection: React.FC = () => {
       <p className="text-lg mb-6 text-gray-400 max-w-5xl">
         Passionate about crafting seamless and interactive web applications, I thrive on solving complex problems and creating efficient solutions. 
         With a deep interest in full stack development, I constantly explore new technologies to stay ahead in this ever-evolving field. 
-        Let's build something amazing together!
+        Let&apos;s build something amazing together!
       </p>
 
       {/* <div className="flex flex-row md:flex-row  md:space-y-0 md:space-x-4">
