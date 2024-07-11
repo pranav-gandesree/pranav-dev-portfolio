@@ -6,7 +6,7 @@ const projects = [
   
   {
     title: 'TrueColors Photography',
-    description: 'The Truecolor Photography landing page is a showcase of artistry and professionalism in visual storytelling. Designed to captivate visitors from the moment they arrive, it highlights the commitment to capturing life&apos;s most precious moments with clarity and vibrancy',
+    description: 'The Truecolors Photography landing page is a showcase of artistry and professionalism in visual storytelling. Designed to captivate visitors from the moment they arrive, it highlights the commitment to capturing life&apos;s most precious moments with clarity and vibrancy',
     techStack: ['HTML', 'CSS', 'ReactJS', 'TailwindCss', 'Firebase'],
     image: project1,
     githubLink: 'https://github.com/pranav-gandesree/truecolors',
