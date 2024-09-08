@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar/Navbar";
 import { Toaster } from "@/components/ui/toaster"
+import  Sidebar from "@/components/sidebar/Sidebar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +20,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="dark:bg-gray-900 dark:text-white"> 
+      {/* <body className="dark:bg-gray-900 dark:text-white">  */}
+      <body className="absolute top-0 z-[-2] h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+
+
       <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -27,6 +31,7 @@ export default function RootLayout({
             disableTransitionOnChange>
               <div>
                 <Navbar/>
+                <Sidebar/>
               </div>
             {children}
             <Toaster />
