@@ -115,7 +115,7 @@ export default function ProjectCard({ title, description, techStack, image, gith
                 {techStack.map((tech) => (
                   <motion.span
                     key={tech}
-                    className="text-sm bg-blue-500 text-white rounded-full px-3 py-1"
+                    className="text-sm bg-slate-900 text-white rounded-full px-3 py-1"
                     whileHover={{ scale: 1.1, backgroundColor: "#3b82f6" }}
                     transition={{ duration: 0.2 }}
                   >

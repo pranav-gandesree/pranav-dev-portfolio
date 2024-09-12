@@ -8,9 +8,9 @@ import { Separator } from '@/components/ui/separator';
 
 const HomePage: React.FC = () => {
   return (
-    <div>
+    <div className='ml-28'>
       <ProfileSection />
-    <Separator/>
+    {/* <Separator/> */}
       <TechStackSection/>
       <Separator/>
       <ProjectSection/>

@@ -1,4 +1,5 @@
-// components/MovieCard.tsx
+'use client'
+
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { AiFillStar } from "react-icons/ai";
@@ -10,7 +11,7 @@ interface Movie {
   id: number;
   title?: string;
   name?: string;
-  poster_path: string;
+  poster_path?: string;
   rating?: number;
 }
 
@@ -22,7 +23,7 @@ const MovieCard: React.FC<{ movie: Movie }> = ({ movie }) => {
   };
 
   return (
-    <motion.div className="relative bg-white dark:bg-darkSecondary shadow-md p-3 rounded-3xl group transition-[opacity,transform] duration-500">
+    <motion.div className="relative dark:bg-darkSecondary shadow-md p-3 rounded-3xl group transition-[opacity,transform] duration-500">
       <div className="relative h-64 overflow-hidden shadow-lg w-44 -mt-7 rounded-2xl">
         {loading && (
           <>
@@ -54,7 +55,7 @@ const MovieCard: React.FC<{ movie: Movie }> = ({ movie }) => {
         />
       </div>
 
-      <div className="flex flex-col gap-2 mt-2 mb-1 max-w-full">
+      <div className="flex flex-col gap-2 mt-2 mb-1">
         <MovieWatchedStatus rating={movie.rating} />
         <p className="text-sm font-medium -z-1 line-clamp-1" title={movie.title ?? movie.name}>
           {movie.title ?? movie.name}
