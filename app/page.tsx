@@ -129,7 +129,7 @@
 //       </CardContent>
 //     </Card>
 //   )
-// }
+// import Header from '@/components/canvas/Header'
 
 
 
@@ -138,27 +138,28 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-import AboutMe from '@/components/sections/AboutMe'
-import Header from '@/components/canvas/Header'
 import Projects from '@/components/sections/ProjectSection'
 import React from 'react'
+import Skills from '@/components/sections/TechStackSection'
+import Footer from '@/components/sections/Footer'
+import Header from '@/components/canvas/Header'
+import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 const page = () => {
   return (
     <div className= "">
       <Header/>
-      <AboutMe/>
-      <Projects/>
+      {/* <AboutMe/> */}
+      <Skills/>
+      <div>
+        <Projects/>
+        <Link href="/projects" className="flex justify-center mt-8 mb-8">
+          <Button>Show more projects  </Button>
+      </Link>
+ 
+      </div>
+      <Footer/>
     </div>
   )
 }

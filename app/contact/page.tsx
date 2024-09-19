@@ -1,11 +1,9 @@
-
+import ContactSection from "@/components/sections/ContactSection";
 
 const  ContactPage : React.FC = () => {
     return (
      <>
-         <div>
-          cintatus 
-         </div>
+        <ContactSection/>
      </>
     );
   }
