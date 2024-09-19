@@ -3,6 +3,13 @@ import Socials from '@/components/canvas/Socials'
 import Projects from '@/components/sections/ProjectSection'
 import React from 'react'
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Projects - Pranav',
+  description: 'Pranav Gandesree portfolio',
+};
+
 const page = () => {
   return (
     <>

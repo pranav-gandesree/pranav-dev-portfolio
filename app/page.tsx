@@ -7,6 +7,22 @@ import Header from '@/components/canvas/Header'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home - Pranav',
+  description: 'Pranav Gandesree portfolio',
+  openGraph: {
+    title: 'Pranav - Home',
+    description: 'Pranav Gandesree portfolio',
+    url: 'https://pranavgandesree.vercel.app/',
+    siteName: 'Pranav Gandesree',
+    locale: 'en_US',
+    type: 'website',
+  },
+};
+
+
 const page = () => {
   return (
     <div className= "">
