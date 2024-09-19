@@ -8,11 +8,11 @@ import { Separator } from '@/components/ui/separator';
 
 const HomePage: React.FC = () => {
   return (
-    <div className='ml-28'>
+    <div className='w-[83%] flex justify-center flex-col'>
       <ProfileSection />
-    {/* <Separator/> */}
+
       <TechStackSection/>
-      <Separator/>
+
       <ProjectSection/>
     </div>
   );
