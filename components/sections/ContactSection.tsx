@@ -14,11 +14,11 @@ export default function ContactCard() {
       <div className="flex flex-col md:flex-row">
         <div className="md:w-1/2 p-8 text-white">
           <CardHeader>
-            <CardTitle className="text-3xl font-bold mb-4">Let's Work Together</CardTitle>
+            <CardTitle className="text-3xl font-bold mb-4">Let&apos;s Work Together</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="mb-6">
-              I'm always open to new opportunities and collaborations. Whether you have a project in mind or just want to chat, feel free to reach out!
+              I&apos;m always open to new opportunities and collaborations. Whether you have a project in mind or just want to chat, feel free to reach out!
             </p>
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
