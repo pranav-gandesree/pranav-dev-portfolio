@@ -6,7 +6,7 @@ const Header = () => (
       Hello, I&apos;m Pranav Gandesree.
     </h1>
     <p className="text-lg md:text-xl text-gray-400 mb-8">
-      21-year-old tech enthusiast passionate and on a journey to create cool projects and leave a mark in the world of tech! Exploring the latest in Web3, blockchain, and decentralized
+      21-year-old passionate tech enthusiast on a journey to create cool projects and make my mark in the world of tech! Exploring the latest in Web3, blockchain and decentralized
       technologies. 
     </p>
     <Socials />
