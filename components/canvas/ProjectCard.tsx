@@ -1,5 +1,3 @@
-
-
 'use client'
 
 import { Button } from "@/components/ui/button";
@@ -11,8 +9,8 @@ import { motion } from "framer-motion";
 const ProjectCard = ({ title, description, technologies, githublink, livelink }: { title: string; description: string; technologies: string[]; livelink?: string; githublink: string }) => {
   return (
     <motion.div
-      whileHover={{ rotate: 3 }} // Rotate clockwise by 5 degrees on hover
-      transition={{ duration: 0.3 }} // Smooth transition over 0.3 seconds
+      whileHover={{ rotate: 3 }} 
+      transition={{ duration: 0.3 }} 
       className="w-full"
     >
       <Card className="bg-gray-900">
@@ -27,7 +25,7 @@ const ProjectCard = ({ title, description, technologies, githublink, livelink }:
 
           <div className="flex flex-row gap-2">
             {livelink && (
-              <Button asChild className="bg-slate-800 text-white">
+              <Button asChild className="bg-slate-800 text-white hover:text-black">
                 <Link href={livelink} target="_blank" rel="noopener noreferrer">View Project</Link>
               </Button>
             )}

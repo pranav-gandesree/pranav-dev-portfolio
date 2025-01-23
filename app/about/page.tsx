@@ -1,5 +1,4 @@
 import AboutMe from "@/components/sections/AboutMe";
-
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {

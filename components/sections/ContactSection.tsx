@@ -48,7 +48,7 @@ export default function ContactCard() {
             </CardHeader>
             <CardContent>
               <form
-                action="https://formspree.io/f/movavapj" // Formspree endpoint
+                action="https://formspree.io/f/movavapj"
                 method="POST" 
                 className="space-y-4"
               >

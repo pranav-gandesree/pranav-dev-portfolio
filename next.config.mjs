@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    domains: ['media.gettyimages.com', 'i.pinimg.com', 'imgs.search.brave.com'],
     remotePatterns: [
       {
         protocol: 'https',

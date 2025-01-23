@@ -1,7 +1,7 @@
 import ProjectCard from "@/components/canvas/ProjectCard";
 
 const Projects = ({ limit }: { limit?: number }) => {
-  // All project data
+
   const allProjects = [
     {
       title: "True Colors Photography",
@@ -14,15 +14,15 @@ const Projects = ({ limit }: { limit?: number }) => {
       title: "projektHub",
       description: "A platform for users to share profiles and projects, fostering collaboration and inspiration.",
       technologies: ["Next.js", "PostgreSQL", "Prisma", "NextAuth"],
-      // livelink: "#",
+      livelink: "https://projekthub.vercel.app",
       githublink: "https://github.com/pranav-gandesree/projekthub",
     },
     {
-      title: "Document Your Journey",
-      description: "A website enabling users to track personal progress and explore others' journeys.",
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "NextAuth"],
-      // livelink: "",
-      githublink: "https://github.com/pranav-gandesree/documentyourjourney",
+      title: "ChatX",
+      description: "This project enables users to uncover patterns in their saved Whatsapp chat content by analyzing a provided text file.",
+      technologies: ["Next.js", "Shadcn", "Typescript", "Gemini API"],
+      livelink: "https://chatpatternx.vercel.app",
+      githublink: "https://github.com/pranav-gandesree/ai-generatepatterns",
     },
     {
       title: "Postman Clone",
@@ -40,7 +40,6 @@ const Projects = ({ limit }: { limit?: number }) => {
     },
   ];
 
-  // If limit is provided, slice the projects array
   const projectsToShow = limit ? allProjects.slice(0, limit) : allProjects;
 
   return (

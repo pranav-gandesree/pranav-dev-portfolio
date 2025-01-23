@@ -17,7 +17,6 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 z-50 w-[83%] left-1/2 transform -translate-x-1/2 backdrop-blur-lg bg-opacity-80 shadow-md">
       <div className="flex justify-between items-center p-4 ">
-        {/* Avatar/Icon on the left */}
         <div className="flex items-center space-x-4">
           <Link href="/">
             <Image
@@ -25,12 +24,11 @@ export default function Navbar() {
               alt="Pranav Gandesree"
               width={50}
               height={50}
-              className="cursor-pointer rounded-full"
+              className="cursor-pointer rounded-full md:ml-16 md:mt-2"
             />
           </Link>
         </div>
 
-        {/* Navigation Menu for larger screens */}
         <div className="hidden md:flex items-center space-x-8">
           <NavigationMenu>
             <NavigationMenuList className="flex space-x-2">
@@ -66,7 +64,7 @@ export default function Navbar() {
           </NavigationMenu>
         </div>
 
-        {/* Menu Bar icon for mobile screens */}
+
         <div className="md:hidden flex items-center">
           <button
             onClick={toggleMenu}
@@ -84,7 +82,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu */}
+  
       {isOpen && (
         <div className="md:hidden bg-[#2D3748] backdrop-filter backdrop-blur-lg text-white shadow-md rounded-b-2xl">
           <NavigationMenu>
