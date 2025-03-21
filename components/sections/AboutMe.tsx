@@ -6,7 +6,7 @@ const AboutMe = () => (
     <h2 className="text-2xl font-bold mb-4">About Me</h2>
 
     <p className="text-gray-400 mb-10 text-lg">
-      I&apos;m a 21-year-old tech enthusiast with a degree in Computer Science
+      I&apos;m a 22-year-old tech enthusiast with a degree in Computer Science
       and Engineering, specializing in IoT. I love solving problems through
       technology and creating user-friendly, impactful web applications.
     </p>
