@@ -11,9 +11,11 @@ const skills = [
   "MongoDB", 
   "PostgreSQL", 
   "Supabase", 
-  "Recoil",  
+  "Zustand",  
   "Tailwind CSS",
   "Git/Github",
+  "Docker",
+  "AWS",
   "Python"
 ];
 

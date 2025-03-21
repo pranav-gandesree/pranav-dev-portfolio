@@ -18,6 +18,13 @@ const Projects = ({ limit }: { limit?: number }) => {
       githublink: "https://github.com/pranav-gandesree/projekthub",
     },
     {
+      title: "kwikhost",
+      description: "A mulit tenant platform to upload, share, and manage your static files with custom domains.",
+      technologies: ["Next.js", "Typescript", "PostgreSQL", "Drizzle ORM", "NextAuth", "AWS"],
+      livelink: "https://kwikhost.xyz",
+      githublink: "https://github.com/pranav-gandesree/kwikhost",
+    },
+    {
       title: "ChatX",
       description: "This project enables users to uncover patterns in their saved Whatsapp chat content by analyzing a provided text file.",
       technologies: ["Next.js", "Shadcn", "Typescript", "Gemini API"],
